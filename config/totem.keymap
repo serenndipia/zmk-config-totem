@@ -123,9 +123,9 @@ label= "SYM-NUM"                           ;
 label= "MEDIA"                             ;
 // ┗━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━┛
 //             ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓   ┏━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┳━━━━━━━━━━━┓
-//             ┃           ┃           ┃     UP    ┃           ┃           ┃   ┃     [     ┃     ]     ┃     <     ┃     >     ┃           ┃
+//             ┃           ┃ CTRL+LEFT ┃     UP    ┃CTRL+RIGHT ┃   HOME    ┃   ┃     [     ┃     ]     ┃     <     ┃     >     ┃           ┃
 //             ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫
-//             ┃ CTRL+ALT  ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃           ┃   ┃     {     ┃     }     ┃   VOL-    ┃   MUTE    ┃   VOL+    ┃
+//             ┃ CTRL+ALT  ┃   LEFT    ┃    DOWN   ┃   RIGHT   ┃    END    ┃   ┃     {     ┃     }     ┃   VOL-    ┃   MUTE    ┃   VOL+    ┃
 // ┏━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┓
 // ┃           ┃           ┃           ┃           ┃           ┃           ┃   ┃     (     ┃     )     ┃   PREV    ┃   PLAY    ┃   NEXT    ┃           ┃
 // ┗━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┫   ┣━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━╋━━━━━━━━━━━┻━━━━━━━━━━━┻━━━━━━━━━━━┛
@@ -134,8 +134,8 @@ label= "MEDIA"                             ;
  bindings = <
 // ╷           ╷           ╷           ╷           ╷           ╷           ╷   ╷           ╷           ╷           ╷           ╷           ╷           ╷
 
-                &trans      &trans      &kp UP      &trans      &trans          &kp LBKT    &kp RBKT    &kp LT      &kp GT      &trans
-                &kp LC(LALT) &kp LEFT   &kp DOWN    &kp RIGHT   &trans          &kp LBRC   &kp RBRC    &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP
+                &trans      &kp LC(LEFT) &kp UP     &kp LC(RIGHT) &kp HOME        &kp LBKT    &kp RBKT    &kp LT      &kp GT      &trans
+                &kp LC(LALT) &kp LEFT   &kp DOWN    &kp RIGHT   &kp END         &kp LBRC    &kp RBRC    &kp C_VOL_DN &kp C_MUTE &kp C_VOL_UP
     &trans      &trans      &trans      &trans      &trans      &trans          &kp LPAR    &kp RPAR    &kp C_PREV  &kp C_PP    &kp C_NEXT  &trans
                                         &trans      &trans      &trans          &trans      &trans      &trans      
                         >;
